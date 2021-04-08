@@ -1,0 +1,41 @@
+.gallery {
+        position: relative;
+        width: 100%;
+        margin: 20px;
+    
+    &__pic1 {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5%;}
+    
+    &__pic2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:$backgroundcolor1;
+        border-radius: 5%;}
+    
+    &__button {
+        position: absolute;
+        color:$backgroundcolor1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: xx-large;
+        width: 200px;
+        height: 40px;
+        background-color: $backgroundcolor2;
+        border-radius: 5%;
+        text-align: center;}
+
+        &__pic2:hover{ 
+        opacity: 1;}
+    }
